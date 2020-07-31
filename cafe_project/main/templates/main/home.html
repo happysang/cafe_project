@@ -1,0 +1,14 @@
+{%  extends 'layout/layout.html' %}
+{%  load static %}
+{%  block content %}
+<section>
+    <div class="jumbotron">
+        <h1 class="display-4">권다방</h1>
+        <p class="lead"> 커피 그 이상의 커피 권다방 커피,, </p>
+        <hr class="my-4">
+        <p>권다방 회원이세요? 로그인을 통해 나만의 리워드를 확인해 보세요! <br>
+          권다방 회원이 아니세요? 그러면 가입하세요!</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'board_create' %}" role="button">글 쓰기</a>
+      </div>
+</section>
+{% endblock %}
